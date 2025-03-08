@@ -140,7 +140,7 @@ function loadWidget(config: Config) {
       }
     });
 
-    const devtools = () => {};
+    const devtools = () => { };
     console.log('%c', devtools);
     devtools.toString = () => {
       showMessage(result.message.console, 6000, 9);
@@ -161,7 +161,7 @@ function loadWidget(config: Config) {
     );
     if (modelId === null) {
       // 首次访问加载 指定模型 的 指定材质
-      modelId = 1; // 模型 ID
+      modelId = 0; // 模型 ID
       modelTexturesId = 53; // 材质 ID
     }
     void model.loadModel(modelId, modelTexturesId, '');
